@@ -1,76 +1,41 @@
-🎯 Operação Resgate: FPS 3D em JavaScript
+Operação Resgate: FPS 3D
 
-Um jogo de tiros em primeira pessoa (FPS) 3D de sobrevivência e exploração, desenvolvido inteiramente com HTML5, JavaScript (Vanilla) e a biblioteca Three.js.
+Um jogo de tiros em primeira pessoa (FPS) 3D simples, desenvolvido para correr diretamente no navegador usando HTML, JavaScript e Three.js. Não requer a transferência de recursos externos (imagens ou sons), pois tudo é gerado através de código.
 
-O grande diferencial deste projeto é que não utiliza ficheiros externos de imagens ou sons. Todas as texturas (armas, caixotes, terreno e inimigos) são geradas de forma procedural usando a API do Canvas, e os efeitos sonoros são sintetizados em tempo real através da Web Audio API.
+🎯 Objetivo
 
-🕹️ O Objetivo
+A tua missão é explorar o mapa, encontrar e recolher os 5 Cristais de Energia azuis. Usa as caixas para te protegeres dos tiros inimigos e sobrevive até completares a missão!
 
-Foste largado num campo de batalha com uma missão crítica: Encontrar e recolher 5 Cristais de Energia (Artefactos Azuis) espalhados pelo mapa. No entanto, o território está patrulhado por guardas inimigos controlados por Inteligência Artificial que tentarão abater-te assim que te virem. Usa as caixas de madeira como cobertura e sobrevive!
+🎮 Controlos
 
-✨ Características Principais
+W, A, S, D - Mover a personagem
 
-Gráficos 3D no Navegador: Renderização suave utilizando WebGL via Three.js.
+Espaço - Saltar
 
-Inteligência Artificial (IA) com Raycasting: Os NPCs inimigos não andam apenas na tua direção de forma cega. Eles utilizam raycasting para verificar a "linha de visão". Se estiveres escondido atrás de um caixote, eles tentarão contorná-lo até te conseguirem ver para disparar.
+Rato - Olhar em redor e Mirar
 
-Física e Colisões Reais: Implementação de caixas delimitadoras (Box3) para garantir que o jogador, os inimigos e os projéteis não atravessam objetos sólidos (caixotes).
+Clique Esquerdo - Disparar
 
-Texturas Procedurais: Geração dinâmica de texturas de fibra de carbono para a pistola, camuflagem digital para o fuzil, e padrões de madeira e relva.
+1 - Equipar Pistola (Tiro único)
 
-Áudio Dinâmico: Sons de disparos e de recolha de itens gerados via osciladores matemáticos (Web Audio API).
+2 - Equipar Fuzil (Tiro automático)
 
-🎮 Como Jogar (Controlos)
+🚀 Como Executar
 
-W, A, S, D: Mover a personagem.
+A instalação é imediata, basta seguires estes passos:
 
-Barra de Espaço: Saltar.
+Transfere os ficheiros do projeto para o teu computador.
 
-Rato (Movimento): Olhar em redor / Mirar.
+Clica duas vezes no ficheiro jogo.html para o abrir num navegador web moderno (recomendado: Chrome, Firefox ou Edge).
 
-Botão Esquerdo do Rato: Disparar (Clica para a pistola, mantém premido para o fuzil).
+Clica no botão "Iniciar Missão" no ecrã inicial e joga!
 
-Tecla 1: Equipar a Pistola (Tiro semi-automático, mais dano por bala).
-
-Tecla 2: Equipar o Fuzil (Tiro automático, disparo rápido).
-
-🚀 Como Correr o Jogo Localmente
-
-Como o jogo não depende de recursos externos locais (imagens/áudio), a instalação é incrivelmente simples:
-
-Clona este repositório para a tua máquina:
-
-
-Navega até à pasta do projeto.
-
-Abre o ficheiro jogo.html (ou index.html) diretamente em qualquer navegador web moderno (Chrome, Firefox, Edge).
-
-Nota: Devido a políticas de segurança de alguns navegadores relacionadas com o bloqueio do cursor (PointerLock), o jogo funciona melhor se for servido através de um servidor local simples (ex: Extensão Live Server do VS Code, ou python -m http.server), mas o duplo clique no ficheiro HTML também costuma funcionar.
+Nota: Se o rato não bloquear corretamente no ecrã devido a definições de segurança do navegador, experimenta correr o ficheiro através de um servidor local simples (como a extensão Live Server).
 
 🛠️ Tecnologias Utilizadas
 
-HTML5 & CSS3: Para a estrutura da interface de utilizador (HUD, menus, ecrã de dano).
+HTML5 / CSS3: Interface e menus.
 
-JavaScript (ES6): Toda a lógica do jogo, motor de física simplificado e IA.
+JavaScript (Vanilla): Lógica principal, física e Inteligência Artificial.
 
-Three.js: Biblioteca principal para renderização 3D, luzes, geometria e matemática de colisões (Vector3, Box3, Raycaster).
-
-PointerLockControls: Para capturar o cursor do rato e proporcionar uma experiência FPS imersiva.
-
-🔮 Melhorias Futuras
-
-Ideias para expandir o jogo (sentes-te à vontade para fazer um fork e contribuir!):
-
-[ ] Adicionar um sistema de recarregamento e limite de munições.
-
-[ ] Criar diferentes tipos de inimigos (ex: Snipers lentos ou unidades corpo-a-corpo rápidas).
-
-[ ] Adicionar pacotes de vida (medkits) espalhados pelo mapa para recuperar energia.
-
-[ ] Criar um minimapa ou bússola para ajudar a localizar os cristais.
-
-[ ] Suporte para comandos/gamepads.
-
-📝 Licença
-
-Este projeto está sob a licença MIT. Podes usar, modificar e distribuir o código livremente. Vê o ficheiro LICENSE para mais detalhes.
+Three.js: Biblioteca para renderização de gráficos 3D no navegador.
